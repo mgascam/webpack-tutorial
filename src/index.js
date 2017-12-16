@@ -9,7 +9,11 @@ function component() {
 
     btn.innerHTML = 'Click me and check the console';
     btn.onclick = printMe;
-
+    const checkIfWorks = () => {
+        const supportsES6 = true;
+        console.log(`ES6 supported? ${supportsES6}`);
+    };
+    checkIfWorks();
     element.appendChild(btn);
 
     return element;
